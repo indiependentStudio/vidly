@@ -1,0 +1,506 @@
+/*  Nottingham Twins & Triplets Club Stylesheet
+    Dave Megarry, 2017 */
+
+/*-------- Custom fonts --------*/
+@font-face {
+    font-family: 'youngitalic';
+    src: url('../fonts/young_italic-webfont.woff2') format('woff2'),
+         url('../fonts/young_italic-webfont.woff') format('woff');
+    font-weight: normal;
+    font-style: normal;
+
+}
+
+@font-face {
+    font-family: 'youngregular';
+    src: url('../fonts/young-webfont.woff2') format('woff2'),
+         url('../fonts/young-webfont.woff') format('woff');
+    font-weight: normal;
+    font-style: normal;
+
+}
+
+/*-------- Base styles --------*/
+
+body {
+  font-family: 'youngregular',serif;
+  background-color: #777;
+/*  color: #3b3b3b;*/
+  color: #eee;
+  text-align: justify;
+}
+
+h1  {
+   font-size: 50px;
+}
+
+h2  {
+  font-size: 35px;
+}
+
+h3  {
+  font-size: 25px;
+}
+
+blockquote  {
+  padding: 20px;
+  position: relative;
+  border-left: 15px solid #144576;
+  border-right: 2px solid #144576;
+  line-height: 1.6;
+  text-align: justify;
+  -moz-box-shadow: 2px 3px 7px  #444;
+  -webkit-box-shadow: 2px 3px 7px  #444;
+  -o-box-shadow: 2px 3px 7px  #444;
+  box-shadow: 2px 3px 7px  #444;
+}
+
+blockquote:before {
+  content: "\201C";
+  position: absolute;
+  left: 10px;
+  top: -15px;
+  color: #144576;
+  font-size: 4em;
+}
+
+blockquote li {
+  margin-bottom: 10px;
+}
+
+footer  {
+  height: auto;
+  background: #3b3b3b;
+  color: #8c8c8c;
+  font-family: monospace;
+}
+
+footer a  {
+  color: #d9d614;
+}
+
+footer #footer-copyright {
+  text-align: left;
+}
+
+footer #footer-pbpd  {
+  float: right;
+}
+
+a:link  {
+  color: #d9d614;
+}
+
+a:visited {
+  color: #d9d614;
+}
+
+a:hover {
+  color: #d9d614;
+  text-decoration: none;
+  font-size: 1.1em;
+}
+
+a:active  {
+  color: #eee;
+  text-decoration: none;
+  font-size: 1.1em;
+}
+
+a.light-link:link   {
+  color: #d9d614;
+}
+
+a.light-link:visited {
+  color: #144576;
+}
+
+a.light-link:hover {
+  color: #144576;
+  text-decoration: none;
+  font-size: 1.1em;
+}
+
+a.light-link:active  {
+  color: #144576;
+  text-decoration: none;
+  font-size: 1.1em;
+  font-weight: bold;
+}
+
+tr:hover {
+  background-color: #629e4f;
+}
+
+/*-------- Classes --------*/
+h2.page-heading {
+  padding: 50px 0 20px;
+  margin: 20px 0 0 -15px;
+  text-align: left;
+  color: #eee;
+}
+
+.today-box {
+  padding: 5px;
+  margin: 0 -15px 20px;
+  border: #8c8c8c;
+  background: #444;
+  line-height: 40px;
+  text-align: right;
+  color: #eee;
+  font-size: 1.6em;
+  font-weight: bold;
+}
+
+.mission-statement  {
+  padding: 20px 20px 0px 20px;
+  background: #444;
+  color: #eee;
+  font-size: 1.2em;
+}
+
+.home-image-link  {
+  background-repeat: no-repeat;
+  background-size: 160px 160px;
+/*  padding: 10px;*/
+  margin: 10px 0;
+  height: 160px;
+}
+
+.home-image-link:hover {
+  transition: all .2s ease-in-out;
+  transform: scale(1.1);
+}
+
+.home-image-link-label {
+  position: absolute;
+  padding: 5px;
+  bottom: 0;
+  left: 0;
+  background: rgba(59, 59, 59, .7);
+  color: #eee;
+}
+
+.home-image-link:hover span {
+  color: #d9d614 !important;
+  background: #3b3b3b !important;
+}
+
+.extras-left  {
+  padding: 20px;
+  margin-top: 20px;
+  margin-bottom: 60px;
+  background: #ac2211;
+  color: #eee;
+}
+
+.extras-left .lead {
+  background-color: inherit;
+}
+
+.extras-centre .lead {
+  background-color: inherit;
+}
+
+.extras-right .lead {
+  background-color: inherit;
+}
+
+.extras-centre  {
+  padding: 20px;
+  margin-top: 20px;
+  margin-bottom: 60px;
+  background: #144576;
+  color: #eee;
+}
+
+.extras-right {
+  padding: 20px;
+  margin-top: 20px;
+  margin-bottom: 60px;
+  background: #629e4f;
+  color: #eee;
+}
+
+.daytimegroups-important  {
+  color: #ac2211;
+  font-weight: bold;
+}
+
+.wollatongroup-details {
+  display: none;
+} 
+
+.netherfieldgroup-details {
+  display: none;
+} 
+
+.beestongroup-details {
+  display: none;
+} 
+
+.hucknallgroup-details {
+  display: none;
+} 
+
+.longeatongroup-details {
+  display: none;
+}
+
+.mansfieldgroup-details {
+  display: none;
+}
+
+.rainworthgroup-details {
+  display: none;
+}
+
+.eastleakegroup-details {
+  display: none;
+}
+
+.arnoldgroup-details {
+  display: none;
+}
+
+.chilwellgroup-details {
+  display: none;
+}
+
+.westbridgfordgroup-details {
+  display: none;
+}
+
+.eastwoodgroup-details {
+  display: none;
+}
+
+
+/*-------- IDs --------*/
+h1#site-title {
+  color: #eee;
+  padding: 50px 0 20px;
+  margin: 20px 0 0 -15px;
+  text-align: left;
+}
+
+#home-image-link-1  {
+  display: block;
+  background-image: url("../images/1latestnews.png");
+}
+
+.noneyet {
+/*  position: relative;*/
+  padding: 0;
+}
+
+#home-image-link-2  {
+  display: block;
+  position: relative;
+  background-image: url("../images/2daytimegroups.png");
+}
+
+#home-image-link-3  {
+  display: block;
+  background-image: url("../images/3jointoday2.png");
+}
+
+#home-image-link-4  {
+  background-image: url("../images/4resources.png");
+}
+
+#home-image-link-5  {
+  background-image: url("../images/5events.png");
+}
+
+#home-image-link-6  {
+  background-image: url("../images/6members.png");
+}
+
+#cookieConsentNotification  {
+  display: none;
+  background: #666;
+  color: #eee;
+  border-top: solid 1px #3b3b3b;
+}
+
+#cookieConsentNotification button {
+  position: relative;
+  top: 50%;
+  transform: translateY(-50%);
+}
+
+#cookieConsentNotification p {
+  padding: 5px 0 5px;
+}
+
+#policy {
+  padding: 10px 10px 50px 10px;
+}
+
+#groups-image {
+  background: url('../images/groups300.jpg') no-repeat ;
+}
+
+#daytimegroups  {
+  padding-top: 30px;
+}
+
+#daytimeGroups-table  {
+/*  margin: 10px 0 50px 0;*/
+  margin-top: 10px;
+  margin-bottom: 50px;
+  text-align: left;
+}
+
+#map  {
+  height: 300px;
+}
+
+#daytimegroups-instructions {
+  font-size: 0.9em;
+  color: #ccc;
+}
+
+
+
+/*-------- Overrides --------*/
+
+/* Bootstrap Nav */
+/* Bootstrap navbar brand colour */
+.navbar-dark .navbar-brand  {
+  color: #d9d614;
+}
+
+/* Bootstrap navbar link colour */
+.navbar-dark .navbar-nav .nav-link{
+  color: #eee;
+}
+
+.navbar-dark .navbar-nav .nav-link:hover  {
+  color: #d9d614;
+  font-size: inherit;
+}
+
+/* Bootstrp navbar active link colour */
+.navbar-dark .navbar-nav .nav-item.active .nav-link {
+  color: white;
+  font-weight: bold;
+}
+
+/* Bootstrap navbar highlight (custom class) colour */
+.navbar-dark .navbar-nav .nav-link.highlighted {
+  color: #d9d614;
+}
+
+/* Bootstrap navbar background colour */
+.navbar.navbar-dark {
+/*  background-color: #3b3b3b;*/
+  background-color: #222;
+}
+
+/* Bootstrap navbar dropdown */
+.dropdown-menu  {
+/*  background-color: #3b3b3b;*/
+  background-color: #222;
+}
+
+/* Bootstrap navbar dropdown text */
+.dropdown-menu .dropdown-item  {
+/*    background-color: #3b3b3b;  */
+  background-color: #222;
+    color: #eee;
+}
+
+.dropdown-menu .dropdown-item:hover  {
+  color: #d9d614;
+  font-size: inherit;
+}
+
+/* Bootstrap -success- */
+.btn-outline-success  {
+  color: #d9d614;
+  border-color: #d9d614;
+}
+
+.btn-outline-success:hover  {
+  color: #eee;
+  border-color: #3b3b3b;
+  background-color: #629e4f;
+}
+
+.btn-outline-success:active  {
+  color: #d9d614;
+  border-color: #eee;
+  background-color: #3b3b3b;
+}
+
+.btn-warning  {
+  font-family: 'youngregular';
+  border-color: #3b3b3b;
+  background-color: #d9d614;
+}
+
+.btn-warning:hover  {
+  color: #d9d614;
+  border-color: #000;
+  background-color: #3b3b3b;
+}
+
+
+p.lead  {
+  padding: 10px;
+  background-color: #444;
+  color: #eee;
+  text-align: left;
+  letter-spacing: 1px;
+}
+
+.bg-success {
+  background-color: #629e4f !important;
+}
+
+
+
+/*-------- Media queries - change for iPhone 6+ landscape size --------*/
+@media only screen and ( max-width : 740px ) {
+  
+  h1 {
+    font-size: 20px;
+    font-weight: bold;
+  }
+  
+  section {
+    padding: 10px 0 0 0;
+  }
+  
+  .home-image-link {
+    height: 120px;
+    width: 120px;
+    
+    background-size: 120px;
+    background-position: left;
+  }
+  
+  .home-image-link-label  {
+    font-size: 0.9em;
+  }
+  
+  .extras-left {
+    margin-bottom: 10px;
+  }
+  
+  .extras-centre {
+    margin-bottom: 10px;
+  }
+  
+  .extras-right {
+    margin-bottom: 50px;
+  }
+  
+  #groups-image {
+    display: none;
+  }
+  
+  
+} /* end of media queries
